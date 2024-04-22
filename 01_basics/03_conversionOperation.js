@@ -3,7 +3,7 @@ let score = undefined
 // console.log(typeof score)
 // console.log(typeof(score))
 
-/*In both cases, the output will be the same, indicating the type of the variable score. The difference is mainly in syntax style; the first one uses the operator typeof directly with the operand score, while the second one encloses score within parentheses and then applies the typeof function to it.*/
+/*In both cases, the output will be the same i.e undefined, indicating the type of the variable score. The difference is mainly in syntax style; the first one uses the operator typeof directly with the operand score, while the second one encloses score within parentheses and then applies the typeof function to it.*/
 
 let valueInNumber = Number(score)
 // console.log(typeof valueInNumber)
@@ -60,15 +60,15 @@ console.log(1 + 2 + "2") // =>32
 
 /* These type of practises are only good for exam or interview point of view but not in companies. Make your code simple and readable*/
 
-// console.log(3 + 4 * 5 % 3)//not good use parenthesis
+// console.log(3 + 4 * 5 % 3)//not good, use parenthesis
 
-// console.log(+true);
-// console.log(+"");
+// console.log(+true); // => 1
+// console.log(+""); // => 0        Don't know how.....only good for exam or interview point of view but not in companies
 
 let num1, num2, num3
 
 num1 = num2 = num3 = 2 + 2 // not a good practise
 
 // let gameCounter = 100
-// ++gameCounter
+// ++gameCounter                Normal prefix and postfix operators
 // console.log(gameCounter)

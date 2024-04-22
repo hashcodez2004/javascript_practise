@@ -1,12 +1,12 @@
 "use strict" /*Treats all js code as newer version. Strict mode makes it easier to write "secure" JavaScript. Strict mode changes previously accepted "bad syntax" into real errors.*/
 
-// alert( 3 + 3) // we are using nodejs, not browser
+// alert( 3 + 3) // we are using nodejs, not browser. So will not run.
 
 console.log(3 
     +
      3) // code readability should be high
 
-console.log("Hitesh")
+console.log("Hitesh"); console.log("Chaudhary") // => comma ka itna hi kaam hai
 
 
 let name = "hitesh"

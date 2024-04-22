@@ -11,9 +11,9 @@ let userEmail//undefined
 const id = Symbol('123')
 const anotherId = Symbol('123') //dono ka datatype symbol hai na ki string
 
-console.log(id === anotherId)//false => values same hone k baad bhi dono different aur unique hainn
+console.log(id === anotherId)//false => values aur dataType same hone k baad bhi dono different aur unique hainn
 
-const bigNumber = 3456543576654356754n//n lgane se bigint me badal jata hai
+const bigNumber = 3456543576654356754n// n lgane se bigint me badal jata hai
 
 // Reference (Non primitive)
 
