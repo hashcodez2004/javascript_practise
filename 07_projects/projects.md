@@ -45,7 +45,7 @@ form.addEventListener('submit', function(e){
     results.innerHTML = `Give valid weight ${weight}`
   }
   else{
-    const BMI = (weight / ((height * height) / 10000)).toFixed(2)
+    const BMI = (weight / ((height * height) / 10000)).toFixed(2);
     var halaat;
     if(BMI<18.6){
       halaat="Underweight";
@@ -59,3 +59,12 @@ form.addEventListener('submit', function(e){
   }
 })
 ```
+## Project 3
+```Javascript
+const clock = document.getElementById('clock')
+// const clock = document.querySelector('#clock')
+
+setInterval(function(){
+  let date = new Date()
+  clock.innerHTML = date.toLocaleTimeString() //can display in various formats using the date.----any function
+}, 1000)```
