@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HARSH SHARMA</h1>
+    <button id="start">START</button>
+    <button id="stop">STOP</button>
+    <p id="para"></p>
+</body>
+<script>
+    
+    function timeChange(){
+        const now = new Date;
+        document.querySelector('#para').innerHTML = now.toLocaleString();
+    }
+    
+    let intervalId;
+
+    document.querySelector('#start').addEventListener('click',function(){
+        if(!intervalId)
+        intervalId = setInterval(timeChange, 1000);
+    })
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearInterval(intervalId);
+        intervalId=''
+    })
+</script>
+</html>
