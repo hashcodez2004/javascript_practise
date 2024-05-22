@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HARSH SHARMA</h1>
+    <button id="stop">STOP</button>
+</body>
+<script>
+    const heading = document.querySelector('h1');
+    function headingChange(){
+        heading.innerHTML = "COOL"
+    }
+    const changeMe = setTimeout(headingChange, 2000)
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(changeMe)
+        console.log("chal gya")
+    })
+</script>
+</html>
