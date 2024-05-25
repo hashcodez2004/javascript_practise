@@ -162,6 +162,32 @@ function newGame(){
   });
 }
 ```
+## Project 5
+```javascript
+//selected the area where we want to add the table
+const insert = document.getElementById('insert');
+
+//can use window.addEventListener......... also
+document.addEventListener('keyup', function(e) {
+  insert.innerHTML = `
+  <div class='color'>
+  <table>
+  <tr>
+    <th>KEY</th>
+    <th>KEYCODE</th>
+    <th>CODE</th>
+  </tr>
+  <tr>
+  <td>${e.key === " " ? 'space' : e.key}</td>
+  <td>${e.keyCode}</td>
+  <td>${e.code}</td>
+  </tr>
+  </table>
+  </div>
+  `
+});
+```
+
 ## Project 6
 ```javascript
 //function to generate random color
